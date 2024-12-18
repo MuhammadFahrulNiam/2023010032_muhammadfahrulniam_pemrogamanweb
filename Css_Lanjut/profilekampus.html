@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Kampus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #b60000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative; /* Untuk memungkinkan posisi absolute */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        header nav ul li {
+            display: inline;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+        header .menu-link {
+            position: absolute;
+            top: 20px; /* Jarak dari atas */
+            right: 20px; /* Jarak dari kanan */
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        header .menu-link:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #b60000;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        ul li::before {
+            content: '\2022';
+            color: #b60000;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .about div {
+            display: flex;
+            flex-wrap: wrap; /* Membuat gambar turun ke baris berikutnya jika tidak cukup ruang */
+            gap: 10px; /* Memberi jarak antar gambar */
+            justify-content: center; /* Pusatkan gambar */
+        }
+        .about img {
+            width: 100%; /* Ukuran gambar default */
+            max-width: 570px; /* Batasi ukuran gambar maksimum */
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #b60000;
+            color: white;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+        .contact a {
+            color: #b60000;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="menu-link">Menu</a>
+        <h1>Politeknik Balekambang</h1>
+        <nav>
+            <ul>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#visi-misi">Visi & Misi</a></li>
+                <li><a href="#jurusan">Program</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section id="profil" class="about">
+            <h2>Profil Kampus</h2>
+            <div>
+                <img src="images/polibang1.jpg" alt="Gambar Kampus">
+                <img src="images/polibang2.png" alt="Gambar Kampus">
+            </div>
+            <p>Politeknik Balekambang merupakan salah satu lembaga Pendidikan Tinggi Vokasi yang dikelola oleh Pondok Pesantren Roudlotul Mubtadiin Balekambang Gemiring Lor Nalumsari Jepara. Pesantren ini berdiri pada tahun 1884 oleh Hadrlotus Syaikh KH. Hasbulloh. Pendidikan Vokasi mengarahkan proses belajar mengajar pada tingkat keahlian, keterampilan, dan standar kompetensi spesifik sesuai dengan kebutuhan pasar kerja, serta mempunyai kemandirian berbasis IPTEK.</p>
+        </section>
+
+        <section id="visi-misi" class="visi-misi">
+            <h2>Visi dan Misi</h2>
+            <h3>Visi</h3>
+            <p>Menjadi Politeknik yang Berdaya Saing Global, Profesional, dan beraqidah Ahlus Sunnah Wal Jama’ah.</p>
+            <h3>Misi</h3>
+            <ul>
+                <li>Menyelenggarakan dan mengembangkan pendidikan yang mampu berdaya saing dalam era globalisasi.</li>
+                <li>Menyelenggarakan pendidikan profesional sesuai dengan prinsip good university governance.</li>
+                <li>Membangun komunitas yang ikhlas, toleransi, moderat, dan religius dalam menjaga NKRI.</li>
+                <li>Melaksanakan Tri Dharma perguruan tinggi.</li>
+            </ul>
+        </section>
+
+        <section id="jurusan" class="jurusan">
+            <h2>Program Studi</h2>
+            <ul>
+                <li>Administrasi Bisnis Internasional</li>
+                <li>Rekayasa Perangkat Lunak</li>
+                <li>Akuntansi Keuangan Publik</li>
+            </ul>
+        </section>
+
+        <section id="kontak" class="contact">
+            <h2>Kontak Kami</h2>
+            <p>Alamat: Balekambang Rt 02 Rw 07 Gemiring Lor Nalumsari Jepara 59466</p>
+            <p>Email: <a href="mailto:politbangjepara@gmail.com">politbangjepara@gmail.com</a></p>
+            <p>Telepon: <a href="tel:+6285641111267">0856-4111-1267</a></p>
+            <p>Website: <a href="https://www.polibang.ac.id" target="_blank">www.polibang.ac.id</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Kampus Politeknik Balekambang. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
+
+
+

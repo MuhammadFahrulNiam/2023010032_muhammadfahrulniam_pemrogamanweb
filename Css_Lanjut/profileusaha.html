@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usaha Ikan Hias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #b60000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative; /* Agar link berada dalam konteks header */
+        }
+        .menu-link {
+            position: absolute;
+            top: 20px; /* Jarak dari atas */
+            right: 20px; /* Jarak dari kanan */
+            background-color: white;
+            color: #b60000;
+            padding: 8px 12px;
+            text-decoration: none;
+            border: 2px solid #b60000;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .menu-link:hover {
+            background-color: #b60000;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #b60000;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .image-gallery img {
+            max-width: 45%;
+            height: auto;
+            border-radius: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #b60000;
+            color: white;
+            margin-top: 20px;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            text-decoration: none;
+            color: #b60000;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Usaha Ikan Hias</h1>
+        <!-- Link Menu di Pojok Kanan Atas -->
+        <a href="index.html" class="menu-link">Menu</a>
+    </header>
+
+    <div class="container">
+        <h2>Tentang saya</h2>
+        <p>Selamat datang di usaha ikan hias saya! Saya adalah penyedia berbagai jenis ikan hias berkualitas yang siap mempercantik akuarium Anda. Dengan pengalaman bertahun-tahun, saya memastikan setiap ikan yang saya tawarkan sehat dan indah.</p>
+
+        <h2>Jenis-Jenis Ikan Hias</h2>
+        <div class="image-gallery">
+            <img src="images/ikan1.webp" alt="Ikan Hias">
+            <img src="images/ikan2.jpg" alt="Ikan Hias">
+            <img src="images/ikan3.webp" alt="Ikan Hias">
+            <img src="images/ikan4.jpg" alt="Ikan Hias">
+        </div>
+        <ul>
+            <li>Ikan Guppy</li>
+            <li>Ikan Platy</li>
+            <li>Ikan Micky Mouse</li>
+            <li>Ikan Pedang</li>
+        </ul>
+
+        <h2>Keunggulan Kami</h2>
+        <ul>
+            <li>Kualitas ikan yang terjamin</li>
+            <li>Harga bersaing</li>
+            <li>Beragam pilihan ikan hias</li>
+            <li>Pelayanan ramah dan profesional</li>
+        </ul>
+
+        <h2>Kontak Kami</h2>
+        <p>Alamat: Jl. Ikan Hias No. 123, Kota Kudus</p>
+        <p>Email: usahaikanhias@gmail.com</p>
+        <p>Telepon: 0882-3280-0134</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Usaha Ikan Hias. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
+

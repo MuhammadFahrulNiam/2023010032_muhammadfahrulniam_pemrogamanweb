@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #b60000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative; /* Memungkinkan posisi absolute untuk anak elemen */
+        }
+        header img {
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        header .menu-link {
+            position: absolute;
+            top: 20px; /* Jarak dari atas */
+            right: 20px; /* Jarak dari kanan */
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        header .menu-link:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        main h2 {
+            color: #b60000;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #b60000;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #990000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="menu-link">Menu</a>
+        <img src="images/Niam.jpg" alt="Foto Profil" width="130" height="170">
+        <h1>Kontak Saya</h1>
+    </header>
+    <main>
+        <h2>Hubungi Saya</h2>
+        <p>Jika Anda memiliki pertanyaan atau ingin bekerja sama, silakan hubungi saya melalui informasi berikut:</p>
+        <ul>
+            <li><strong>Email:</strong> niamxfriendsbstrd@gmail.com</li>
+            <li><strong>Telepon:</strong> +6288232800134</li>
+            <li><strong>Alamat:</strong> Jl. Lahar rt 1 rw 3, Dawe, Kudus</li>
+        </ul>
+        <h3>Kirim Pesan</h3>
+        <form action="mailto:niamxfriendsbstrd@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tulis pesan Anda di sini" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </main>
+</body>
+</html>
+
+
