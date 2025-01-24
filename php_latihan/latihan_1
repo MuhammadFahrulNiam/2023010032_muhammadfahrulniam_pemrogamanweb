@@ -1,0 +1,4 @@
+<?php
+// Menampilkan pesan "Hello, World!" ke browser
+echo "Hello, World!";
+?>

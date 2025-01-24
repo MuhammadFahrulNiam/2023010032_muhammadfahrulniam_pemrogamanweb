@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Politeknik Balekambang</title>
+</head>
+<body>
+    <?php
+    // Menggunakan echo untuk menampilkan data
+    echo "<h1>Selamat Datang di Politeknik Balekambang</h1>";
+    echo "<p>Politeknik Balekambang adalah salah satu institusi pendidikan tinggi terbaik.</p>";
+    echo "<p>Kami menyediakan berbagai program studi yang unggul di bidang teknik dan teknologi.</p>";
+    ?>
+</body>
+</html>

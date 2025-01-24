@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan PHP - 4 Konsep Tipe Data</title>
+</head>
+<body>
+    <?php
+    // 1. Tipe Data String
+    $nama = "Politeknik Balekambang";
+    echo "<h2>Selamat Datang di $nama</h2>";
+    
+    // 2. Tipe Data Integer
+    $tahunBerdiri = 2008;
+    echo "<p>Politeknik ini berdiri sejak tahun: $tahunBerdiri</p>";
+
+    // 3. Tipe Data Array
+    $programStudi = array("Teknik Informatika", "Teknik Mesin", "Akuntansi");
+    echo "<p>Program Studi yang tersedia:</p>";
+    echo "<ul>";
+    foreach ($programStudi as $prodi) {
+        echo "<li>$prodi</li>";
+    }
+    echo "</ul>";
+
+    // 4. Tipe Data Resource (Membuka file teks)
+    $file = fopen("info.txt", "w"); // Membuka file untuk ditulis
+    fwrite($file, "Ini adalah informasi tentang Politeknik Balekambang.");
+    fclose($file);
+
+    // Menampilkan pesan berhasil membuka file
+    echo "<p>File info.txt berhasil dibuat dan ditulis!</p>";
+
+    // 5. Operator Aritmatika (Contoh bonus)
+    $x = 10;
+    $y = 4;
+    echo "<p>Operasi Aritmatika:</p>";
+    echo "<ul>";
+    echo "<li>Penjumlahan ($x + $y): " . ($x + $y) . "</li>";
+    echo "<li>Pengurangan ($x - $y): " . ($x - $y) . "</li>";
+    echo "<li>Perkalian ($x * $y): " . ($x * $y) . "</li>";
+    echo "<li>Pembagian ($x / $y): " . ($x / $y) . "</li>";
+    echo "<li>Sisa bagi ($x % $y): " . ($x % $y) . "</li>";
+    echo "</ul>";
+    ?>
+</body>
+</html>

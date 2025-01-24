@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Nama Barang</title>
+</head>
+<body>
+    <h2>Daftar Nama Barang</h2>
+    <ol>
+        <?php
+        // Variabel untuk menentukan jumlah barang
+        $jumlah_barang = 50;
+
+        // Perulangan untuk membuat daftar barang
+        for ($i = 1; $i <= $jumlah_barang; $i++) {
+            echo "<li>Barang ke-$i</li>";
+        }
+        ?>
+    </ol>
+</body>
+</html>

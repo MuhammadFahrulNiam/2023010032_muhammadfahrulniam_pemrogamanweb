@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan Lingkup Variabel PHP</title>
+</head>
+<body>
+    <?php
+    // Variabel global
+    $nama = "Polibang";
+    $tahun = 2025;
+
+    // Fungsi dengan variabel lokal
+    function infoJurusan() {
+        // Variabel lokal
+        $jurusan = "Teknik Informatika";
+        $semester = 2;
+
+        // Menampilkan variabel lokal
+        echo "<p>Jurusan: <b>$jurusan</b></p>";
+        echo "<p>Semester: <b>$semester</b></p>";
+    }
+
+    // Fungsi untuk menggunakan variabel global
+    function infoGlobal() {
+        global $nama, $tahun; // Mengakses variabel global
+        echo "<p>Institusi: <b>$nama</b></p>";
+        echo "<p>Tahun Akademik: <b>$tahun</b></p>";
+    }
+
+    // Memanggil fungsi
+    echo "<h2>Informasi Akademik</h2>";
+    infoGlobal();
+    infoJurusan();
+    ?>
+</body>
+</html>

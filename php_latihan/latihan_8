@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Belajar Operator PHP</title>
+</head>
+<body>
+    <h1>Belajar Operator PHP</h1>
+
+    <h2>Operator Aritmatika</h2>
+    <?php
+    $a = 5;
+    $b = 10;
+
+    echo "Hasil Penjumlahan ($a + $b): " . ($a + $b) . "<br>";
+    echo "Hasil Pengurangan ($a - $b): " . ($a - $b) . "<br>";
+    echo "Hasil Perkalian ($a * $b): " . ($a * $b) . "<br>";
+    echo "Hasil Pembagian ($a / $b): " . ($a / $b) . "<br>";
+    echo "Hasil Pangkat ($a * $b): " . ($a * $b) . "<br>";
+    echo "Hasil Modulus ($a % $b): " . ($a % $b) . "<br>";
+    ?>
+
+    <h2>Operator Penugasan</h2>
+    <?php
+    $x = 15;
+    echo "Nilai awal x: $x<br>";
+    $x += 5;
+    echo "Setelah x += 5: $x<br>";
+    $x -= 10;
+    echo "Setelah x -= 10: $x<br>";
+    $x *= 2;
+    echo "Setelah x *= 2: $x<br>";
+    $x /= 5;
+    echo "Setelah x /= 5: $x<br>";
+    ?>
+
+    <h2>Operator Perbandingan</h2>
+    <?php
+    $y = 20;
+    $z = 30;
+
+    echo "Apakah $y > $z? " . var_export($y > $z, true) . "<br>";
+    echo "Apakah $y < $z? " . var_export($y < $z, true) . "<br>";
+    echo "Apakah $y == $z? " . var_export($y == $z, true) . "<br>";
+    echo "Apakah $y != $z? " . var_export($y != $z, true) . "<br>";
+    echo "Apakah $y >= $z? " . var_export($y >= $z, true) . "<br>";
+    echo "Apakah $y <= $z? " . var_export($y <= $z, true) . "<br>";
+    ?>
+</body>
+</html>

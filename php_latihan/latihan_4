@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan Variabel PHP</title>
+</head>
+<body>
+    <?php
+    // Deklarasi variabel
+    $nama = "Polibang";
+    $jurusan = "Rekayasa Perangkat Lunak";
+    $tahun = 2025;
+    $semester = 3;
+    $pengajar = "Indra kurniawan,M.Kom";
+
+    // Menampilkan kombinasi variabel
+    echo "<h2>Selamat datang di $nama!</h2>";
+    echo "<p>Anda sedang berada di jurusan <b>$jurusan</b>.</p>";
+    echo "<p>Saat ini adalah semester ke-<b>$semester</b> pada tahun <b>$tahun</b>.</p>";
+    echo "<p>Pengajar mata kuliah ini adalah <b>$pengajar</b>.</p>";
+    ?>
+</body>
+</html>

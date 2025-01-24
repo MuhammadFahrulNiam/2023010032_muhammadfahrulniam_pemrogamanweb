@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Case Sensitivity PHP</title>
+</head>
+<body>
+    <?php
+    // Variabel dengan nama berbeda (case-sensitive)
+    $warna = "merah";
+    $WARNA = "biru";
+    $WarNa = "hijau";
+
+    // Menampilkan hasil variabel
+    echo "Rumah saya berwarna " . $warna . "<br>";
+    echo "Mobil saya berwarna " . $WARNA . "<br>";
+    echo "Sepeda saya berwarna " . $WarNa . "<br>";
+    ?>
+</body>
+</html>
